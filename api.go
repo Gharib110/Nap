@@ -1,6 +1,8 @@
 package Nap
 
 type API struct {
-	BaseURL   string
-	Resources map[string]*RestResource
+	BaseURL       string
+	Resources     map[string]*RestResource
+	DefaultRouter *CallBackRouter
+	Client        *Client
 }
